@@ -1,0 +1,226 @@
+@CHARSET "UTF-8";
+
+html, body {
+    height: calc(100%); /* 8px one ul row size, trick of current fixed footer realization*/
+    margin: 0;
+    padding: 0;
+}
+
+body {
+	background-image: url(img/bg.png);
+	background-repeat: repeat-x;
+	font-family: Courier New, Courier New, Courier6, monospace;
+}
+
+a, a:hover, a:visited {
+	text-decoration: none !important;
+	color: #fff;
+}
+
+.PageWrapper {
+    min-height: 100%;
+    margin-bottom: 15px;
+}
+
+* html .PageWrapper {
+    height: 100%;
+}
+
+.PageBuffer {
+    height: 90px;
+    text-align: center;
+    background-color: #0C2459;
+    color: #fff;
+}
+
+.PageFooter {
+	font-family: Georgia, serif;
+	margin: 10px auto 25px;
+	padding: 10px;
+	height: 65px;
+	text-align: center;
+	line-height: 14px;
+	font-size: 12px;
+	background-color: #0C2459;
+	color: #eed;
+	border-top: 1px solid #333;
+	-moz-user-select: none; 
+    -khtml-user-select: none; 
+    -webkit-user-select: none; 
+    -o-user-select: none; 
+    -webkit-box-shadow: 0px 5px 5px 0px rgba(50, 50, 50, 0.75);
+	-moz-box-shadow:    0px 5px 5px 0px rgba(50, 50, 50, 0.75);
+	box-shadow:         0px 5px 5px 0px rgba(50, 50, 50, 0.75);
+}
+
+.MainMenu {
+	font-family: Georgia, serif;
+    height: inherit;
+    padding-left: 230px;
+    margin: 0px auto 0px;
+    min-width: 1250px;
+    border-top: 1px solid #333;
+	-webkit-box-shadow: 0px 5px 5px 0px rgba(50, 50, 50, 0.75);
+	-moz-box-shadow:    0px 5px 5px 0px rgba(50, 50, 50, 0.75);
+	box-shadow:         0px 5px 5px 0px rgba(50, 50, 50, 0.75);
+}
+
+.MenuItem {
+	height: 89px;
+	width: 180px;
+	float: left;
+	padding: 12px;
+	padding-top: 28px;
+	font-size: 20px;
+	-moz-user-select: none; 
+    -khtml-user-select: none; 
+    -webkit-user-select: none; 
+    -o-user-select: none; 
+}
+
+.MenuItemSelected {
+	background-color: #6E0B0B;
+}
+
+.I1{
+	background-color: #0F0E5E;
+}
+
+.I2{
+	background-color: #15257A;
+}
+
+.I3{
+	background-color: #143584;
+}
+
+.I4{
+	background-color: #15257A;
+}
+
+.I5{
+	background-color: #0F0E5E;
+}
+
+.MenuItem:hover {
+	background-color: #414667;
+}
+
+.MainArea {
+	 width:100%;    
+}
+
+.MainAreaContent {
+	width: 80%;
+	text-align: justify;
+	font-size:18px;
+	background-color: #fff;
+	margin: 25px auto 25px;
+	padding: 20px 40px 20px 40px;
+	border-radius: 4px;
+	border: 1px solid #a9a7c9;
+	-webkit-box-shadow: 0px 5px 5px 0px rgba(50, 50, 50, 0.75);
+	-moz-box-shadow: 0px 5px 5px 0px rgba(50, 50, 50, 0.75);
+	box-shadow: 0px 5px 5px 0px rgba(50, 50, 50, 0.75);
+}
+
+.MainAreaContent h4 {
+	width: 100%;
+	font-size:24px;
+	font-weight: bold;
+	text-align: center;
+	margin:15px auto 25px;
+}
+
+.MainAreaContent p span{
+	margin-left:35px;
+}
+
+.MainAreaContent a{
+	color: #800000;
+}
+
+.MainAreaContent #inTextImg {
+	width:100%;
+	margin: 10px auto;
+	z-index:-1;
+}
+
+/*.MainAreaContent #servicesBottomImg {
+	width:100%;
+}*/
+
+.MainAreaContent #tableInText {
+	width:100%;
+}
+
+.MainAreaContent #tableInTextLeftCell {
+	width:60%;
+	vertical-align: top;
+	padding-top: 50px;
+}
+.MainAreaContent #tableInTextRightCell {
+	padding-left:50px;
+	text-align: left;
+}
+
+.Logo {
+	position: absolute;
+	top: 200px;
+	left: 0px;
+	width: 100%;
+	height: 50px;
+	background-color: rgba(213, 225, 255, 0.66);
+	font-family: Georgia, serif;
+	color: #000;
+	font-size: 35px;
+	text-align: center;
+	z-index: 3;
+}
+.Banner {
+	overflow: hidden;
+	width:100%;
+	height: 250px;
+	background-color:#fff;
+	-moz-user-select: none; 
+    -khtml-user-select: none; 
+    -webkit-user-select: none; 
+    -o-user-select: none; 
+}
+
+.BannerImg {
+	height:250px;
+}
+
+.slick-slider {
+	  margin-bottom: 0px;
+}
+
+/* Form validation new event*/
+.SendMailForm {
+	width:500px;
+	margin: 10px auto 10px;
+	text-align: center;
+}
+
+.SendMailForm .SendMailTable {
+	width: 100%;
+	text-align: left;
+	margin: 15px auto 15px;
+	border-spacing: 10px;
+    border-collapse: separate;
+    v-align:top;
+}
+
+/*.EventForm .EventTable textarea {
+    resize: none;
+}*/
+
+.SendMailForm input.ng-invalid.ng-touched {
+	background-color: #fdbbbe;
+}
+
+.SendMailForm input.ng-valid.ng-touched {
+	background-color: #defee2;
+}
+
